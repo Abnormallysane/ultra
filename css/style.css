@@ -251,7 +251,7 @@ h1 {
   #road{
     height: 9vh;
     width: 500%;
-    background: url(/images/road3.png);
+    background: url(../images/road3.png);
     background-size: 77vh;
     display: block;
     bottom: 0;
@@ -272,7 +272,7 @@ h1 {
   .city{
     height: 30vh;
     width: 500%;
-    background: url(/images/city.png);
+    background: url(../images/city.png);
     background-size: 150vh;
     display: block;
     bottom: 9vh;
