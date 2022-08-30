@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" data-skrollr-stylesheet/>
+    <title>Document</title>
+</head>
+<body>
+    <div id="bc">
+    </div>
+
+    <div class="moonc" >
+        <img src="images/moon.png" id="moon" alt="">
+    </div>
+
+    <div class="sunc" id="scene">
+        <img src="images/sun.png"  id="sun" alt="">
+        <img src="images/moon.png" id="moon" alt="">
+        <img src="images/c1.png" alt="" class="cloud" id="cone">
+        <img src="images/c2.png" alt="" class="cloud" id="ctwo">
+        <img src="images/c3.png" alt="" class="cloud" id="cthree">
+        <img src="images/c4.png" alt="" class="cloud" id="cfour">
+        <img src="images/c1.png" alt="" class="cloud" id="cfive">
+        <img src="images/stars.png"  id="stars"  data-depth="0.1" alt="">
+        <img src="images/logoultra.png" id="ulogo" data-depth="0.3" alt="">
+    </div>
+
+
+   
+
+    <div class="city">
+    </div>
+    <div id="road">
+    </div>
+   
+    
+    <div class="container" data-0="transform:translateX(0%);" data-6000="transform:translateX(-400%);">
+       
+        <section>
+            <div class="sub">
+                <h1>page1</h1>
+            </div>
+        </section>
+
+        <section>
+            <div class="sub">
+                <h1>page2</h1>
+            </div>
+        </section>
+
+        <section>
+            <div class="sub">
+                <h1>page3</h1>
+            </div>
+        </section>
+
+        <section>
+            <div class="sub">
+                <h1>page4</h1>
+            </div>
+        </section>
+
+        <section>
+            <div class="sub">
+                <h1>page5</h1>
+            </div>
+        </section>
+    </div>
+    <script type="text/javascript" src="js/skrollr.stylesheets.js"></script>
+    <script type="text/javascript" src="js/skrollr.js"></script>
+	<script type="text/javascript">
+	var s = skrollr.init();
+	</script>
+
+
+    <script>
+        let sun  = document.getElementById('sun');
+        let moon  = document.getElementById('moon');
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            sun.style.marginRight= value * .037  + 'vw';
+            moon.style.marginRight= value * .036 + 'vw';
+        })
+    </script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(scene);
+    </script>
+</body>
+</html>
