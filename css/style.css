@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    width: 100vw;
+    height:  100vh ;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+   
+}
+
+
+
+#bc{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+
+    background: rgb(0,99,125);
+    background: linear-gradient(180deg, rgba(0,99,125,1) 0%, rgba(255,255,255,1) 55%);
+    -skrollr-animation-name:change;
+    
+  
+}
+
+
+@-skrollr-keyframes change {
+    0 {
+        background: rgb(0,202,255);
+        background: linear-gradient(270deg, rgba(0,202,255,1) 0%, rgba(255,255,255,1) 65%);
+	}
+
+    2000{
+        background: rgb(226,98,0);
+        background: linear-gradient(270deg, rgba(226,98,0,1) 0%, rgba(255,255,255,1) 65%);
+    }
+
+    4000{
+        background: rgb(0,0,0);
+        background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 65%);
+    }
+
+	6000 {
+        background: rgb(0,0,0);
+		background: linear-gradient(270deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 65%);
+	}
+
+}
+
+
+#stars{
+    position: fixed;
+    width: 100vw;
+    height: 40vh;
+    opacity: 0%;
+    -skrollr-animation-name:star;
+}
+
+@-skrollr-keyframes star {
+  
+
+    3000{
+        
+        opacity: 10%;
+        
+    }
+
+	6000 {
+        
+        opacity: 100%;
+
+	}
+
+}
+
+
+.container{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    
+}
+.sunc{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.moonc{
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+#sun{
+    position: absolute;
+    margin-top: 3vh;
+    width: 25vh;
+    height: 25vh;
+    z-index: 1;
+}
+
+#moon{
+    position: absolute;
+    margin-top: 3vh;
+    margin-left: 216vw;
+    width: 25vh;
+    height: 25vh;
+    z-index: 2;
+}
+
+.cloud{
+    position: fixed;
+    opacity: 90%;
+    z-index: 3;
+    -skrollr-animation-name:clouds;
+    
+}
+
+#cone{
+    left: 5vw;
+    top: 6vh;
+    height: 36vh;
+    width: 28vw;
+    animation: anicloud 34s infinite linear;
+    animation-delay: -7s;
+}
+
+#ctwo{
+    left: 22vw;
+    top: 31vh;
+    height: 25vh;
+    width: 19vw;
+    animation: anicloud 32s infinite linear;
+    animation-delay: -9s;
+}
+
+#cthree{
+    right: 26vw;
+    top: 1vh;
+    height: 54vh;
+    width: 37vw;
+    animation: anicloud 32s infinite linear;
+    animation-delay: -16s;
+}
+
+#cfour{
+    right: 3vw;
+    top: 28vh;
+    height: 30vh;
+    width: 25vw;
+    animation: anicloud 30s infinite linear;
+    animation-delay: -23s;
+}
+
+#cfive{
+    right: 2vw;
+    top: 3vh;
+    height: 28vh;
+    width: 17vw;
+    animation: anicloud 30s infinite linear;
+    animation-delay: -26s;
+}
+
+
+
+@-skrollr-keyframes clouds {
+  
+
+    2500{
+        
+        opacity: 90%;
+        
+    }
+
+	6000 {
+        
+        opacity: 20%;
+
+	}
+
+}
+
+@keyframes anicloud {
+    0%{
+        left: 0;
+        transform : translateX(-100%)
+    }
+
+    100%{
+        left: 100%;
+        transform : translateX(0%)
+    }
+
+  
+    
+}
+
+
+#ulogo{
+    position: fixed;
+    margin-top: 75vh;
+    z-index: 4;
+    width: 14vw;
+    height: 20vh;
+    margin-left: 9vw;
+    
+}
+
+.container section{
+    
+    min-width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+
+
+.container section .sub{
+    
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 100%;
+    
+}
+
+
+h1 {
+    margin: 0;
+    padding: 0;
+  }
+
+  
+  #road{
+    height: 9vh;
+    width: 500%;
+    background: url(/images/road3.png);
+    background-size: 77vh;
+    display: block;
+    bottom: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-repeat: repeat-x;
+    animation: aniroad 1.5s linear infinite;
+  }
+
+ 
+  @keyframes aniroad {
+    100%{
+        transform: translateX(-77vh);
+    }
+}
+
+  .city{
+    height: 30vh;
+    width: 500%;
+    background: url(/images/city.png);
+    background-size: 150vh;
+    display: block;
+    bottom: 9vh;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-repeat: repeat-x;
+    animation: anicity 14s linear infinite;
+  }
+
+  @keyframes anicity {
+    100%{
+        transform: translateX(-150vh);
+    }
+    
+  }
+
+
+  ::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
