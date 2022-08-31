@@ -15,6 +15,150 @@ body{
 }
 
 
+@media only screen and (orientation:landscape) {
+    #lock { display:none; }
+    #unlock { display:block; }
+  }
+   
+  /* (B) CORRECT ORIENTATION - SHOW CONTENT HIDE MESSAGE */
+  @media only screen and (orientation:portrait) {
+    #lock { display:block; }
+    #unlock { display:none; }
+  }
+
+#lock{
+    position: fixed;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 5vh;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(0,99,125);
+    background: linear-gradient(180deg, rgba(0,99,125,1) 0%, rgba(255,255,255,1) 55%);
+
+}
+
+
+.name{
+    position: fixed;
+    width: 30vw;
+    height: 30vh;
+    
+}
+#cname{
+padding-left: 4vw;
+padding-top: 4vh;
+font-size: 6vh;
+-skrollr-animation-name: namec;
+
+}
+
+@-skrollr-keyframes namec {
+    2000{
+        color: rgb(0, 0, 0);
+    }
+
+    5000{
+        color: rgb(255, 255, 255);
+    }
+}
+
+
+
+.navb{
+position: fixed;
+top: 0;
+right: 0;
+width:15vw;
+    height:10vh;
+    z-index: 10;
+}
+
+
+.navi
+{
+    list-style: none;
+    position: absolute;
+    display: flex;
+    right: 0;
+    z-index: 10;
+    margin-top: 2vh;
+    
+}
+
+.navi li{
+    padding-right: 2vw;
+}
+.social{
+    
+    width: 3vw;
+    height: 6vh;
+}
+
+.social:hover{
+    box-shadow: 0 0 4vh aqua;
+}
+
+.buy{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 10vw;
+    height: 10vh;
+    z-index: 9;
+    
+    
+}
+
+
+#buyb{
+    position:absolute;
+    background:#fff;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    text-decoration: none;
+    text-transform:uppercase;
+    font-size: 2vh;
+    letter-spacing: 0.4vw;
+    font-weight:400;
+    padding: 0px 0.8vw;
+    transition: 0.5s;
+    border-radius: 1vw;
+    width: 7vw;
+    height: 8vh;
+    font-weight: bold;
+    bottom: 1vh;
+    right: 1vh;
+    
+    }
+    
+    #buyb:hover{
+      background: var(--clr);
+      color:   var(--clr) ;
+   letter-spacing: 0.7vw;
+   box-shadow: 0 0 35px var(--clr);
+   }
+   
+   #buyb::before{
+      content: '';
+      position: absolute;
+      inset: 2px;
+      border-radius: 1vw;
+      background: #000;
+   }
+   
+   #buyb span{
+      position: relative;
+      transition: 0s;
+        transition-delay:0s;
+   
+   }
 
 #bc{
     position: fixed;
@@ -81,8 +225,12 @@ body{
 
 .container{
     position: fixed;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     display: flex;
+    margin: 0;
+    padding: 0;
+    z-index: 7;
     
 }
 .sunc{
@@ -131,7 +279,7 @@ body{
     left: 5vw;
     top: 6vh;
     height: 36vh;
-    width: 28vw;
+    width: 40vh;
     animation: anicloud 34s infinite linear;
     animation-delay: -7s;
 }
@@ -142,7 +290,7 @@ body{
     height: 25vh;
     width: 19vw;
     animation: anicloud 32s infinite linear;
-    animation-delay: -9s;
+    animation-delay: -11s;
 }
 
 #cthree{
@@ -219,12 +367,12 @@ body{
 
 .container section{
     
-    min-width: 100%;
+    min-width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    z-index: 8;
     
 }
 
@@ -236,8 +384,8 @@ body{
     text-align: center;
     justify-content: center;
     align-items: center;
-    width: 800px;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     
 }
 
@@ -283,6 +431,7 @@ h1 {
     animation: anicity 14s linear infinite;
   }
 
+
   @keyframes anicity {
     100%{
         transform: translateX(-150vh);
@@ -295,3 +444,181 @@ h1 {
     width: 0px;
     height: 0px;
 }
+
+
+#about{
+    text-align: center;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    font-style: normal;
+    font-size: 3vh;
+    padding-bottom: 25vh;
+
+}
+
+#copy{
+    position: absolute;
+    background: transparent;
+    z-index: 7;
+    border: transparent;
+    right: 28vw;
+    border-radius: 1vh;
+    width: 2vw;
+    height: 4vh;
+
+   }
+   
+#copy:hover{
+    box-shadow: 0 0 3vh #00d9ff;
+}   
+
+   #ca{
+    position: absolute;
+    font-size: 3vh;
+    color: #000;
+
+   }
+   #ca:hover{
+    box-shadow: 0 0 4vh #00d9ff;
+   }
+   
+   #copied{
+    width: 1.5vw;
+    height: 3vh;
+   }
+
+   #copied:hover{
+    cursor: pointer;
+   }
+
+
+
+   #token{
+    font-size: 5vh;
+    left: 0;
+    top: 48vh;
+    margin-right: 6vw;
+   }
+
+   .sub .card{
+    
+    width: 17vw;
+    height: 22vh;
+    margin: 5vh;
+    box-shadow: 2vh 2vh 4vh rgba(0,0,0,0.5);
+    border-radius: 1vh;
+    background: rgba(255,255,255,0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 0.3vh solid rgba(255,255,255,0.5);
+    border-left: 0.3vh solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(0.5vh);
+    
+    
+   }
+
+   .card:hover{
+    box-shadow: 0 0 4vh aqua;
+   }
+
+   .sub ul{
+    list-style: none;
+   }
+
+   .sub li{
+    padding-bottom: 1vh;
+    font-size: 2.6vh;
+    font-weight: bold ;
+   }
+
+   .det{
+    text-align: center;
+   }
+   .det h1{
+    padding-top: 2vh;
+    padding-bottom: 3vh;
+    font-size: 3.7vh;
+   }
+
+
+   .sub .cardu{
+    
+    width: 15vw;
+    height: 22vh;
+    margin: 5vh;
+    box-shadow: 2vh 2vh 4vh rgba(0,0,0,0.5);
+    border-radius: 1vh;
+    background: rgba(255,255,255,0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 0.3vh solid rgba(255,255,255,0.5);
+    border-left: 0.3vh solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(0.5vh);
+    
+    
+   }
+
+   .cardu:hover{
+    box-shadow: 0 0 4vh aqua;
+   }
+
+   #uimg{
+    position: absolute;
+    padding-top: 1vh;
+    left: 6vw;
+    width: 3vw;
+    height: 5vh;
+    top: 0;
+   }
+
+   .cardu .det h1{
+    padding-top: 6vh;
+   }
+
+   #utilities{
+    font-size: 5vh;
+    left: 0;
+    top: 48vh;
+    margin-right: 4vw;
+   }
+
+
+   .sub .cardr{
+    
+    width: 15vw;
+    height: 22vh;
+    margin: 5vh;
+    box-shadow: 2vh 2vh 4vh rgba(0,0,0,0.5);
+    border-radius: 1vh;
+    background: rgba(255,255,255,0.1);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 0.3vh solid rgba(255,255,255,0.5);
+    border-left: 0.3vh solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(0.5vh);
+    
+    
+   }
+
+   .cardr:hover{
+    box-shadow: 0 0 4vh aqua;
+   }
+
+
+ #copyright{
+    position: relative;
+    width: 19vw;
+    height: 5vh;
+    left: -43vw;
+    bottom: -48vh;
+    font-size: 3vh;
+    z-index: 9;
+    color: aliceblue;
+    font-weight: bold;
+ }
