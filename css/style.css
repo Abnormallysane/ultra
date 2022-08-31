@@ -399,7 +399,7 @@ h1 {
   #road{
     height: 9vh;
     width: 500%;
-    background: url(road3.png);
+    background: url(../images/road3.png);
     background-size: 77vh;
     display: block;
     bottom: 0;
@@ -420,7 +420,7 @@ h1 {
   .city{
     height: 30vh;
     width: 500%;
-    background: url(city.png);
+    background: url(../images/city.png);
     background-size: 150vh;
     display: block;
     bottom: 9vh;
@@ -430,7 +430,6 @@ h1 {
     background-repeat: repeat-x;
     animation: anicity 14s linear infinite;
   }
-
 
   @keyframes anicity {
     100%{
@@ -615,10 +614,44 @@ h1 {
     position: relative;
     width: 19vw;
     height: 5vh;
-    left: -43vw;
+    left: -35vw;
     bottom: -48vh;
     font-size: 3vh;
     z-index: 9;
     color: aliceblue;
     font-weight: bold;
  }
+
+.cardb{
+    position: absolute;
+    width: 20vw;
+    height: 50vh;
+    margin-right: 37vw;
+    margin-bottom: 14vh;
+}
+
+.cardb:hover{
+    
+    box-shadow: 0 0 4vh aqua;
+    
+}
+
+ #poo{
+    width: 20vw;
+    height: 50vh;
+    border-radius: 2vh;
+ }
+
+ #dex:hover{
+    
+    box-shadow: 0 0 4vh aqua;
+    
+}
+#buychart{
+    position: relative;
+    font-size: 5vh;
+    right: 50vw;
+   
+    margin-right: 4vw;
+}
+
