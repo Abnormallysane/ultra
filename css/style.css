@@ -11,7 +11,7 @@ body{
     padding: 0;
     overflow-x: hidden;
     scroll-behavior: smooth;
-   
+    font-family: 'Tomorrow';
 }
 
 
@@ -52,16 +52,20 @@ body{
 padding-left: 4vw;
 padding-top: 4vh;
 font-size: 6vh;
+font-family: 'Tomorrow';
+color: #375b8c;
+z-index: 27;
 -skrollr-animation-name: namec;
+
 
 }
 
 @-skrollr-keyframes namec {
-    2000{
-        color: rgb(0, 0, 0);
+    1000{
+        color: rgb(77, 128, 196);
     }
 
-    5000{
+    3000{
         color: rgb(255, 255, 255);
     }
 }
@@ -449,7 +453,7 @@ h1 {
     text-align: center;
     padding-left: 20vw;
     padding-right: 20vw;
-    font-style: normal;
+    font-weight: bold;
     font-size: 3vh;
     padding-bottom: 25vh;
 
@@ -460,7 +464,7 @@ h1 {
     background: transparent;
     z-index: 7;
     border: transparent;
-    right: 28vw;
+    right: 26vw;
     border-radius: 1vh;
     width: 2vw;
     height: 4vh;
@@ -474,7 +478,7 @@ h1 {
    #ca{
     position: absolute;
     font-size: 3vh;
-    color: #000;
+    
 
    }
    #ca:hover{
@@ -618,27 +622,27 @@ h1 {
     bottom: -48vh;
     font-size: 3vh;
     z-index: 9;
-    color: aliceblue;
-    font-weight: bold;
+    
  }
 
 .cardb{
     position: absolute;
-    width: 20vw;
-    height: 50vh;
+    width: 24vw;
+    height: 55vh;
     margin-right: 37vw;
-    margin-bottom: 14vh;
+    margin-bottom: 10vh;
+    border-radius: 2vh;
 }
 
 .cardb:hover{
     
-    box-shadow: 0 0 4vh aqua;
+    box-shadow: 0 0 3vh aqua;
     
 }
 
  #poo{
-    width: 20vw;
-    height: 50vh;
+    width: 24vw;
+    height: 55vh;
     border-radius: 2vh;
  }
 
@@ -655,3 +659,24 @@ h1 {
     margin-right: 4vw;
 }
 
+
+.font-effect-fire{
+
+    text-shadow: 0 -0.05em 0.2em aqua,
+    0.01em -0.02em 0.15em aqua,
+    0.01em -0.05em 0.15em aqua,
+    0.02em -0.15em 0.2em aqua,
+    0.04em -0.2em 0.3em #f70,
+    0.05em -0.25em 0.4em aqua,
+    0.06em -0.2em 0.9em aqua,
+    0.1em -0.1em 1em aqua;
+    }
+
+
+    .font-effect-emboss{
+        color: grey;
+    }
+
+    .font-effect-3d-float{
+        color: ;
+    }
